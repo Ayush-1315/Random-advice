@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$background:#202632;
+$advice-slip:#313a49;
+$advice:#fff;
+$button:#56fdac;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advice-slip{
+    // min-height:40vh;
+    width:45vw;
+    background-color: $advice-slip;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    box-shadow:(0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.527));
+}
+.advice-id{
+    letter-spacing: 3px;
+    font-weight: 200;
+    color:$button;
+    width:100%;
+    text-align: center;
+}
+.advice{
+    font-size: 1.5rem;
+    color:$advice;
+    margin:1rem;
+    text-align: center;
+}
+.divider{
+    width:100%;
+    height: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+#divider-line{
+    display: block;
+    width:100%;
+}
+#btn{
+    background-color: $button;
+    height:2.5rem;
+    display: grid;
+    place-items: center;
+    width:2.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+    // position: absolute;
+    transform: translateY(40%);
+    margin:auto;
+    padding:0.6rem;
+}
+img[alt="advice-btn"]{
+   width:70%;
+}
+#btn:hover{
+    box-shadow:(0.2rem 0.2rem 1.5rem $button,-0.2rem -0.2rem 1.5rem $button);
+}
+@media only screen and (min-width:320px) and (max-width:450px){
+    .advice-slip{
+        width:90vw;
+    }
+    #btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        transform: translateY(105%);
+    }
+}
+@media only screen and (min-width:451px) and (max-width:575px){
+    .advice-slip{
+        width:60vw;
+    }
+    #btn {
+        height: 3rem;
+        width: 3rem;
+        transform: translateY(105%);
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px){
+    .advice-slip{
+        width:60vw;
+    }
+    .advice-id{
+        font-size: 1rem;
+    }
+    #btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        transform: translateY(110%);
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+    .advice-slip{
+        width:65vw;
+    }
+    .advice-id{
+        font-size: 1rem;
+    }
+    .advice{
+        font-size: 2rem;
+    }
+    #btn{
+        height: 3.5rem;
+        width:3.5rem;
+        transform: translateY(100%);
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .advice-id {
+        font-size: 1rem;
+    }
+    .advice {
+        font-size: 2.5rem;
+    }
+    #btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        transform: translateY(105%);
+        margin: auto;
+    }
+}
+@media only screen and (min-width:1201px) and (max-width:1440px){
+    .advice-id{
+        font-size: 1.5rem;
+    }
+    .advice{
+        font-size: 3.5rem;
+    }
+    .divider{
+        height: 3rem;
+    }
+    #btn{
+        height:4.5rem;
+        width:4.5rem;
+        transform: translateY(95%);
+        margin:auto;
+    }
+}
+@media only screen and (min-width:1441px) and (max-width:1800px){
+    .advice-slip {
+        width: 50vw;
+    }
+    .advice-id {
+        font-size: 2rem;
+    }
+    .advice {
+        font-size: 2.5rem;
+    }
+    #btn {
+        height: 5.5rem;
+        width: 5.5rem;
+        transform: translateY(85%);
+        margin: 0rem auto;
+    }
+}
+
+
+@media only screen and (min-width:1801px){
+    .advice-slip{
+        width:65vw;
+    }
+    .advice-id{
+        font-size: 3rem;
+    }
+    .advice{
+        font-size: 5.5rem;
+    }
+    #btn {
+        height: 7.5rem;
+        width: 7.5rem;
+        transform: translateY(99%);
+        margin: 2rem auto;
+    }
+}
